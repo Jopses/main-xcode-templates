@@ -154,7 +154,7 @@
 		<string>Resources/Fonts/.gitkeep</string>
 		<string>Models/Presentation/.gitkeep</string>
 		<string>Library/Base Classes/PreparableTableCell.swift</string>
-		<string>Library/Utils/.gitkeep</string>
+		<string>Library/Utils/Logger.swift</string>
 		<string>Library/Extensions/UI/UIColor+InitRGB.swift</string>
 		<string>Library/Reusable Layer/.gitkeep</string>
 		<string>Library/Protocols/ScreenTransitionable.swift</string>
@@ -268,7 +268,7 @@
 				<string>Strings</string>
 			</array>
 		</dict>
-		<key>Library/Utils/.gitkeep</key>
+		<key>Library/Utils/Logger.swift</key>
 		<dict>
 			<key>Group</key>
 			<array>
@@ -276,9 +276,7 @@
 				<string>Utils</string>
 			</array>
 			<key>Path</key>
-			<string>.gitkeep</string>
-			<key>TargetIndices</key>
-			<array/>
+			<string>Logger.swift</string>
 		</dict>
 		<key>Library/Extensions/UI/UIColor+InitRGB.swift</key>
 		<dict>
