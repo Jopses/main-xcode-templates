@@ -3,9 +3,9 @@
 set -o errexit
 set -o errtrace
 
-TEMPLATE_DIR=${HOME}/"Library/Developer/Xcode/Templates/Project Templates/Zorin"
-PARENT_TEMPLATE_NAME="Zorin iOS App.xctemplate"
-TEMPLATE_NAME="Zorin Network iOS App.xctemplate"
+TEMPLATE_DIR=${HOME}/"Library/Developer/Xcode/Templates/Project Templates/Main"
+PARENT_TEMPLATE_NAME="Main iOS App.xctemplate"
+TEMPLATE_NAME="Main Network iOS App.xctemplate"
 
 if [ ! -d "$TEMPLATE_DIR" ]; then
   echo "Didn't find a directory for the templates, so creating it..."
