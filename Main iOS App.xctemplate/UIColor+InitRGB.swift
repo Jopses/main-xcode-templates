@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 extension UIColor {
     @objc
@@ -58,12 +58,6 @@ extension UIColor {
         } else {
             return [0, 0, 0, 0] // HSL -> RGB too hard ;)
         }
-    }
-    
-    var intColor : UInt32 {
-        let data = Data(bytes: rgba)
-        let value = UInt32(bigEndian: data.withUnsafeBytes { $0.pointee })
-        return value
     }
 }
 
