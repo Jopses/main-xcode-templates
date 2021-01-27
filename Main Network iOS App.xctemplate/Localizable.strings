@@ -1,0 +1,17 @@
+// MARK: - Base
+"base.error" = "Error";
+"base.attention!" = "Attention!";
+"base.ok" = "Ok";
+"base.cancel" = "Cancel";
+"base.done" = "Done";
+"base.clear" = "Clear";
+"base.setting" = "Setting";
+"base.continue" = "Continue";
+
+// MARK: - Errors
+
+"baseHttpErrors.401" = "Требуется авторизация."; // 401
+"baseHttpErrors.403" = "Доступ запрещен."; // 403
+"baseHttpErrors.404" = "Запрос не найден."; // 404
+"baseHttpErrors.500" = "Внутренняя ошибка сервера. "; // 500,502
+"baseHttpErrors.other" = "Критическая ошибка.";

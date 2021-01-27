@@ -1,0 +1,26 @@
+use_frameworks!
+inhibit_all_warnings!
+
+platform :ios, '11.0'
+
+target '___PACKAGENAME___' do
+    # Code Tools
+    pod 'R.swift'
+    pod 'SwiftFormat/CLI'
+    pod 'SwiftLint'
+
+    # SDKs
+    
+
+    # UI
+    pod 'PanModal'
+    pod 'SnapKit', '~> 5.0.0'
+
+    # Networking
+    pod 'SDWebImage'
+    pod 'Moya'
+    pod 'KeychainSwift'
+
+    # Services
+    pod 'IQKeyboardManagerSwift'
+end
