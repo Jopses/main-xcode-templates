@@ -7,19 +7,19 @@ public extension StyleWrapper where Element == UIView {
         view.alpha = 0.25
     }
     /// Transparency(Alpha) for View with a value 0.5
-    static let alpha50: StyleWrapper = .wrap { view, theme in
+    static let alpha50: StyleWrapper = .wrap { view, _ in
         view.alpha = 0.5
     }
     /// Transparency(Alpha) for View with a value 0.75
-    static let alpha75: StyleWrapper = .wrap { view, theme in
+    static let alpha75: StyleWrapper = .wrap { view, _ in
         view.alpha = 0.75
     }
     /// Transparency(Alpha) for View with a value 0.9
-    static let alpha90: StyleWrapper = .wrap { view, theme in
+    static let alpha90: StyleWrapper = .wrap { view, _ in
         view.alpha = 0.9
     }
     /// Transparency(Alpha) for View with a value 1
-    static let alpha100: StyleWrapper = .wrap { view, theme in
+    static let alpha100: StyleWrapper = .wrap { view, _ in
         view.alpha = 1
     }
 }

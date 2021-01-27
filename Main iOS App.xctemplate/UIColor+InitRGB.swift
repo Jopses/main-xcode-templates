@@ -20,7 +20,11 @@ extension UIColor {
         let green = UInt8((rgba & 0x00FF0000) >> 16)
         let blue = UInt8((rgba & 0x0000FF00) >> 8)
         let alpha = UInt8(rgba & 0x000000FF)
-        self.init(red: CGFloat(red) / 255, green: CGFloat(green) / 255, blue: CGFloat(blue) / 255, alpha: CGFloat(alpha) / 255)
+        self.init(red: CGFloat(red) / 255,
+                  green: CGFloat(green) / 255,
+                  blue: CGFloat(blue) / 255,
+                  alpha: CGFloat(alpha) / 255
+        )
     }
 
     public convenience init(bgr: UInt) {
@@ -34,7 +38,7 @@ extension UIColor {
         let red = UInt8(bgr & 0x0000FF)
         self.init(red: CGFloat(red) / 255, green: CGFloat(green) / 255, blue: CGFloat(blue) / 255, alpha: alpha)
     }
-    
+
     fileprivate var rgba: [UInt8] {
         var red: CGFloat = 0
         var green: CGFloat = 0
@@ -42,7 +46,7 @@ extension UIColor {
         var alpha: CGFloat = 0
 
         var white: CGFloat = 0
-        
+
         if getRed(&red, green: &green, blue: &blue, alpha: &alpha) {
             return [UInt8(red * 255),
                     UInt8(green * 255),
@@ -61,6 +65,6 @@ extension UIColor {
     }
 }
 
-public func ==(lhs: UIColor, rhs: UIColor) -> Bool {
+public func == (lhs: UIColor, rhs: UIColor) -> Bool {
     return lhs.rgba == rhs.rgba
 }
